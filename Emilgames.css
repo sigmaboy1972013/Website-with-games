@@ -1,0 +1,101 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+header {
+  background: #333;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+main {
+  padding: 2rem;
+}
+
+form input, form button {
+  display: block;
+  margin: 10px 0;
+  padding: 10px;
+  width: 100%;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #333;
+  color: #fff;
+}
+
+#links {
+    display: grid;
+    grid-row: 2;
+}
+
+#cards{
+  display: flex;
+  gap: 80%;
+}
+
+#TicTacToe{
+  width: 150px;
+  height: 250px;
+  border-style: solid;
+  border-color: black;
+  background-color: aqua;
+  box-shadow: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 0px;
+  transition: all 0.5s ease;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#FlappyBird{
+  width: 150px;
+  height: 250px;
+  border-style: solid;
+  border-color: black;
+  background-color: aqua;
+  box-shadow: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 0px;
+  transition: all 0.5s ease;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#TicTacToe:hover{
+  transform: rotateY(360deg);
+  font-size: 16px;
+  background-image: url('C:/Users/mojpc/Desktop/Website games/images/flappybirdbg_logo.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#FlappyBird:hover{
+  transform: rotateY(360deg);
+  font-size: 16px;
+  background-image: url('https://www.publicdomainpictures.net/pictures/260000/velka/tic-tac-toe-1526789164NkQ.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: white;
+}
