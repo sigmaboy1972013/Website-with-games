@@ -85,7 +85,7 @@ footer {
 #TicTacToe:hover{
   transform: rotateY(360deg);
   font-size: 16px;
-  background-image: url('C:/Users/mojpc/Desktop/Website games/images/flappybirdbg_logo.png');
+  background-image: url('images/flappybirdbg_logo.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -98,4 +98,5 @@ footer {
   background-repeat: no-repeat;
   background-position: center;
   background-color: white;
+
 }
