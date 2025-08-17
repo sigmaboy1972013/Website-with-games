@@ -4,7 +4,7 @@ let backroundImg = new Image();
 backroundImg.src = "./images/flappybirdbg.png";
 let inputLocked = false;
 
-document.addEventListener("keydown", handleKeyDown)
+document.addEventListener("click", handleKeyDown)
 
 let GAME_STATE = {
     MENU: "menu",
@@ -204,9 +204,8 @@ function renderGameOver(){
 }
 
 function handleKeyDown(e){
-    if (inputLocked) return;
+        if (inputLocked) return;
 
-    if (e.code === "mouseclick") {
         if (currentState === GAME_STATE.MENU) {
             startGame();
         } else if(currentState === GAME_STATE.GAME_OVER) {
@@ -215,7 +214,6 @@ function handleKeyDown(e){
         } else if (currentState === GAME_STATE.PLAYING) {
             velocityY = -6
         }
-    }
 }
 
 function startGame(){
@@ -248,4 +246,5 @@ function detectCollision(a,b){
         a.y + a.height > b.y;
 
 }
+
 
