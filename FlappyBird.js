@@ -134,7 +134,7 @@ function renderMenu(){
         context.drawImage(flappybirdTextImg, logo.x, logo.y, scaleWidht, scaleHeight)
     }
 
-    let tutorialtext = `Press space to start and jump`
+    let tutorialtext = `Press mouse to start and jump`
     context.font = "20px sans-serif";
     context.textAlign = "left";
     context.fillText(tutorialtext, 10, 45)
@@ -242,4 +242,5 @@ function detectCollision(a,b){
         a.x + a.widht > b.x &&
         a.y < b.y + b.height &&
         a.y + a.height > b.y;
+
 }
