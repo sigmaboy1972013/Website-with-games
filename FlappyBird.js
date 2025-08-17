@@ -222,7 +222,6 @@ function startGame(){
     velocityY = 0;
     velocityX = -2;
     pipeArray = [];
-    spawn_pipe = 1500;
     score = 0;
 
     if(pipeIntervalid) {
@@ -235,8 +234,7 @@ function startGame(){
 function resetGame(){
     pipeArray = [];
     score = 0;
-    bird.y = birdY;  
-    spawn_pipe = 1500;
+    bird.y = birdY;   
 }
 
 function detectCollision(a,b){
@@ -244,7 +242,4 @@ function detectCollision(a,b){
         a.x + a.widht > b.x &&
         a.y < b.y + b.height &&
         a.y + a.height > b.y;
-
 }
-
-
