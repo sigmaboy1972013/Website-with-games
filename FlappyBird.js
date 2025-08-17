@@ -206,7 +206,7 @@ function renderGameOver(){
 function handleKeyDown(e){
     if (inputLocked) return;
 
-    if (e.code === "Space") {
+    if (e.code === "mouseclick") {
         if (currentState === GAME_STATE.MENU) {
             startGame();
         } else if(currentState === GAME_STATE.GAME_OVER) {
@@ -248,3 +248,4 @@ function detectCollision(a,b){
         a.y + a.height > b.y;
 
 }
+
